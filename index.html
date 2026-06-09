@@ -1,93 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LemonMan9103 - Personal Blog</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Engineering Notes - LemonMan9103</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Prism for code syntax highlighting (professional, optional). Remove if not needed -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">LemonMan9103</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div style="display:flex;gap:8px;align-items:center">
-              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
-              <div class="hamburger" id="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </div>
-            </div>
-        </div>
-    </nav>
+  <!--
+    EDIT NOTES:
+    - Change the hero image by replacing the HERO_IMAGE_URL below.
+    - Update the site title and logo text in the .logo element.
+    - Social links are in the footer; replace href="#" with your profile links.
+  -->
 
-    <!-- Hero Section -->
-    <header class="hero" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.65), rgba(2,6,15,0.45)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;">
-        <div class="container">
-            <h1>Professional Engineering Notes</h1>
-            <p>Thoughtful articles on software engineering, tooling, and best practices.</p>
-            <a href="blog.html" class="btn btn-primary">Read My Posts</a>
-        </div>
-    </header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">LemonMan9103</div>
 
-    <!-- Featured Posts -->
-    <section class="featured-posts">
-        <div class="container">
-            <h2>Latest Posts</h2>
-            <div class="posts-grid">
-                <article class="post-card">
-                    <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=60');"></div>
-                    <div class="post-content">
-                        <h3>Getting Started with Web Development</h3>
-                        <p class="post-date">June 5, 2026</p>
-                        <p>A concise guide for modern web development: HTML, CSS, JavaScript, and practical next steps.</p>
-                        <a href="blog.html#post1" class="read-more">Read More →</a>
-                    </div>
-                </article>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-                <article class="post-card">
-                    <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60');"></div>
-                    <div class="post-content">
-                        <h3>Building Responsive Websites</h3>
-                        <p class="post-date">June 1, 2026</p>
-                        <p>Techniques and patterns to make interfaces resilient across devices and contexts.</p>
-                        <a href="blog.html#post2" class="read-more">Read More →</a>
-                    </div>
-                </article>
+      <div style="display:flex;gap:8px;align-items:center">
+        <!-- Theme toggle: script at assets/js/theme.js toggles between dark/light -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
 
-                <article class="post-card">
-                    <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=60');"></div>
-                    <div class="post-content">
-                        <h3>JavaScript Tips and Tricks</h3>
-                        <p class="post-date">May 28, 2026</p>
-                        <p>Practical advice to write clearer, more maintainable JavaScript.</p>
-                        <a href="blog.html#post3" class="read-more">Read More →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+  <!-- HERO: replace the URL below with your preferred image. This uses an Unsplash placeholder. -->
+  <header class="hero" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.65), rgba(2,6,15,0.45)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;">
+    <div class="container">
+      <h1>Professional Engineering Notes</h1>
+      <p>Thoughtful articles on software engineering, tooling, and best practices.</p>
+      <a href="blog.html" class="btn btn-primary">Read My Posts</a>
+    </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 LemonMan9103. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" title="GitHub">GitHub</a>
-                <a href="#" title="LinkedIn">LinkedIn</a>
-                <a href="#" title="Twitter">Twitter</a>
-            </div>
-        </div>
-    </footer>
+  <section class="featured-posts">
+    <div class="container">
+      <h2>Latest Posts</h2>
+      <div class="posts-grid">
+        <article class="post-card">
+          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=60');"></div>
+          <div class="post-content">
+            <h3>Getting Started with Web Development</h3>
+            <p class="post-date">June 5, 2026</p>
+            <p>A concise guide for modern web development: HTML, CSS, JavaScript, and practical next steps.</p>
+            <a href="blog.html#post1" class="read-more">Read More →</a>
+          </div>
+        </article>
 
-    <script src="assets/js/theme.js"></script>
-    <script src="script.js"></script>
+        <article class="post-card">
+          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60');"></div>
+          <div class="post-content">
+            <h3>Building Responsive Websites</h3>
+            <p class="post-date">June 1, 2026</p>
+            <p>Techniques and patterns to make interfaces resilient across devices and contexts.</p>
+            <a href="blog.html#post2" class="read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=60');"></div>
+          <div class="post-content">
+            <h3>JavaScript Tips and Tricks</h3>
+            <p class="post-date">May 28, 2026</p>
+            <p>Practical advice to write clearer, more maintainable JavaScript.</p>
+            <a href="blog.html#post3" class="read-more">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 LemonMan9103. All rights reserved.</p>
+      <div class="social-links">
+        <!-- Replace these with your profiles -->
+        <a href="#" title="GitHub">GitHub</a>
+        <a href="#" title="LinkedIn">LinkedIn</a>
+        <a href="#" title="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Prism JS for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
