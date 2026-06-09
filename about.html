@@ -1,109 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - LemonMan9103</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About - LemonMan9103</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Prism for syntax highlighting (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">LemonMan9103</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <!--
+    EDIT NOTES:
+    - Replace PROFILE_IMAGE_URL with your own image when ready.
+    - Update the short bio & skills in the aside card.
+  -->
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">LemonMan9103</div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.6), rgba(2,6,15,0.35)), url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=60'); background-size:cover; background-position:center;">
+    <div class="container">
+      <h1>About Me</h1>
+      <p style="color:var(--muted)">Software engineering, architecture, and developer experience.</p>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <div class="container" style="display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start;">
+      <main class="about-content">
+        <h2>Who I Am</h2>
+        <p style="color:var(--muted)">
+          I'm LemonMan9103, a full-stack engineer focused on building reliable systems and great developer experiences.
+          I write about pragmatic engineering, tooling, and scalable architecture.
+        </p>
+
+        <h3>My Journey</h3>
+        <p style="color:var(--muted)">
+          I started by experimenting with projects and grew into professional software development. My work centers on maintainability, observability, and developer productivity.
+        </p>
+
+        <h3>What I Do</h3>
+        <p style="color:var(--muted)">
+          I design and ship user-facing features and backend systems. I focus on APIs that are easy to use, tests that inspire confidence, and interfaces that help users get work done.
+        </p>
+
+        <h3>Interests &amp; Hobbies</h3>
+        <ul style="color:var(--muted);">
+          <li>Game development and interactive apps</li>
+          <li>Open-source contributions</li>
+          <li>Continuous learning and mentorship</li>
+          <li>Exploring distributed systems</li>
+        </ul>
+      </main>
+
+      <aside class="card" style="min-width:260px;">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=60" alt="Profile placeholder" style="width:100%;border-radius:8px;margin-bottom:12px;"/>
+        <h3 style="margin-bottom:6px">LemonMan9103</h3>
+        <p style="color:var(--muted);margin-bottom:12px">Senior Engineer · Systems &amp; Frontend</p>
+        <div style="margin-bottom:12px">
+          <strong style="color:var(--text)">Skills</strong>
+          <ul style="color:var(--muted);margin-top:8px">
+            <li>JavaScript, Python, Java</li>
+            <li>React, Node.js, Express</li>
+            <li>Docker, Git, CI/CD</li>
+          </ul>
         </div>
-    </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Learn more about my journey and passion</p>
+        <div style="display:flex;gap:8px">
+          <a class="btn" href="#" style="background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:8px 10px;text-decoration:none">GitHub</a>
+          <a class="btn" href="#" style="background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#021423;border-radius:8px;padding:8px 10px;text-decoration:none">Contact</a>
         </div>
-    </header>
+      </aside>
+    </div>
+  </section>
 
-    <!-- About Content -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2>Who I Am</h2>
-                <p>Hello! I'm LemonMan9103, a passionate full-stack developer and software enthusiast. I love building innovative solutions that solve real-world problems and make a positive impact on people's lives.</p>
-                
-                <h3>My Journey</h3>
-                <p>My journey in software development started with a curiosity about how things work. What began as tinkering with code has evolved into a deep passion for creating elegant, scalable solutions. Over the years, I've worked on various projects ranging from web applications to mobile apps, constantly learning and growing.</p>
-                
-                <h3>Skills & Expertise</h3>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h4>Languages</h4>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Frameworks & Libraries</h4>
-                        <ul>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>Flutter</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Tools & Platforms</h4>
-                        <ul>
-                            <li>Git & GitHub</li>
-                            <li>Docker</li>
-                            <li>Firebase</li>
-                            <li>VS Code</li>
-                        </ul>
-                    </div>
-                </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 LemonMan9103</p>
+    </div>
+  </footer>
 
-                <h3>What I Do</h3>
-                <p>I specialize in building user-centric applications with clean, maintainable code. Whether it's crafting responsive front-end interfaces or designing robust backend systems, I'm committed to delivering high-quality solutions that exceed expectations.</p>
-
-                <h3>Interests & Hobbies</h3>
-                <ul>
-                    <li>🎮 Game development and interactive applications</li>
-                    <li>🌍 Open-source contributions</li>
-                    <li>📚 Continuous learning and skill development</li>
-                    <li>💡 Solving complex technical problems</li>
-                    <li>🚀 Exploring emerging technologies</li>
-                </ul>
-
-                <h3>Let's Connect</h3>
-                <p>I'm always excited to connect with fellow developers, collaborate on interesting projects, and discuss all things tech. Feel free to reach out through my contact page or connect with me on social media!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 LemonMan9103. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
