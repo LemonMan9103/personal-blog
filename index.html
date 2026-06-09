@@ -17,19 +17,22 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
+              <div class="hamburger" id="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.65), rgba(2,6,15,0.45)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;">
         <div class="container">
-            <h1>Welcome to My Blog</h1>
-            <p>Thoughts on software development, tech, and creative projects</p>
+            <h1>Professional Engineering Notes</h1>
+            <p>Thoughtful articles on software engineering, tooling, and best practices.</p>
             <a href="blog.html" class="btn btn-primary">Read My Posts</a>
         </div>
     </header>
@@ -40,31 +43,31 @@
             <h2>Latest Posts</h2>
             <div class="posts-grid">
                 <article class="post-card">
-                    <div class="post-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=60');"></div>
                     <div class="post-content">
                         <h3>Getting Started with Web Development</h3>
                         <p class="post-date">June 5, 2026</p>
-                        <p>A beginner's guide to starting your journey in web development. Learn the basics of HTML, CSS, and JavaScript...</p>
+                        <p>A concise guide for modern web development: HTML, CSS, JavaScript, and practical next steps.</p>
                         <a href="blog.html#post1" class="read-more">Read More →</a>
                     </div>
                 </article>
 
                 <article class="post-card">
-                    <div class="post-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60');"></div>
                     <div class="post-content">
                         <h3>Building Responsive Websites</h3>
                         <p class="post-date">June 1, 2026</p>
-                        <p>Master the art of responsive design. Discover techniques to make your websites look great on all devices...</p>
+                        <p>Techniques and patterns to make interfaces resilient across devices and contexts.</p>
                         <a href="blog.html#post2" class="read-more">Read More →</a>
                     </div>
                 </article>
 
                 <article class="post-card">
-                    <div class="post-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=60');"></div>
                     <div class="post-content">
                         <h3>JavaScript Tips and Tricks</h3>
                         <p class="post-date">May 28, 2026</p>
-                        <p>Level up your JavaScript skills with practical tips, tricks, and best practices for writing cleaner code...</p>
+                        <p>Practical advice to write clearer, more maintainable JavaScript.</p>
                         <a href="blog.html#post3" class="read-more">Read More →</a>
                     </div>
                 </article>
@@ -84,6 +87,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/theme.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
