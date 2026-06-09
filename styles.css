@@ -84,6 +84,15 @@ body{
 .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#021423;font-weight:700}
 .btn-primary:hover{filter:brightness(1.03);transform:translateY(-2px)}
 
+/* Ensure image-overlaid headings (hero / page headers) remain white for readability regardless of theme */
+.hero h1,
+.hero p,
+.page-header h1,
+.page-header p{
+  color:#ffffff;
+  text-shadow:0 2px 18px rgba(0,0,0,0.6);
+}
+
 /* Featured posts grid */
 .featured-posts{padding:48px 0}
 .featured-posts h2{color:var(--text);text-align:center;margin-bottom:28px;font-size:1.5rem}
