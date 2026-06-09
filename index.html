@@ -1,101 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Professional Engineering Notes - LemonMan9103</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LemonMan9103 | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Prism for code syntax highlighting (professional, optional). Remove if not needed -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
 </head>
+
 <body>
-  <!--
-    EDIT NOTES:
-    - Change the hero image by replacing the HERO_IMAGE_URL below.
-    - Update the site title and logo text in the .logo element.
-    - Social links are in the footer; replace href="#" with your profile links.
-  -->
+  <div class="noise"></div>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
 
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">LemonMan9103</div>
+  <header class="navbar">
+    <a href="index.html" class="logo">Lemon<span>Man</span></a>
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <button class="menu-btn" id="menuBtn">☰</button>
 
-      <div style="display:flex;gap:8px;align-items:center">
-        <!-- Theme toggle: script at assets/js/theme.js toggles between dark/light -->
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
-        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO: replace the URL below with your preferred image. This uses an Unsplash placeholder. -->
-  <header class="hero" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.65), rgba(2,6,15,0.45)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;">
-    <div class="container">
-      <h1>Professional Engineering Notes</h1>
-      <p>Thoughtful articles on software engineering, tooling, and best practices.</p>
-      <a href="blog.html" class="btn btn-primary">Read My Posts</a>
-    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <section class="featured-posts">
-    <div class="container">
-      <h2>Latest Posts</h2>
-      <div class="posts-grid">
-        <article class="post-card">
-          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=60');"></div>
-          <div class="post-content">
-            <h3>Getting Started with Web Development</h3>
-            <p class="post-date">June 5, 2026</p>
-            <p>A concise guide for modern web development: HTML, CSS, JavaScript, and practical next steps.</p>
-            <a href="blog.html#post1" class="read-more">Read More →</a>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="tag">Computer Science Student • Web Developer • Builder</p>
+        <h1>Hi, I’m <span>LemonMan9103</span></h1>
+        <p class="hero-text">
+          I build web systems, dashboards, and software projects with clean structure,
+          practical design, and a little chaos energy.
+        </p>
+
+        <div class="hero-actions">
+          <a href="blog.html" class="btn primary">View Projects</a>
+          <a href="about.html" class="btn ghost">About Me</a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <h3>CS</h3>
+            <p>Student</p>
           </div>
+          <div>
+            <h3>Full</h3>
+            <p>Stack Basics</p>
+          </div>
+          <div>
+            <h3>MY</h3>
+            <p>Malaysia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="terminal-card">
+          <div class="terminal-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre><code>const developer = {
+  name: "LemonMan9103",
+  role: "Computer Science Student",
+  skills: ["Java", "PHP", "HTML", "CSS", "MySQL"],
+  focus: "Building useful systems"
+};
+
+console.log("Welcome to my portfolio");</code></pre>
+        </div>
+
+        <div class="bat-wrap">
+          <div class="bat"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <p>Featured Work</p>
+        <h2>Things I’m Building</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🧺</div>
+          <h3>Doorbi Laundry System</h3>
+          <p>A pickup and delivery laundry system with customer, provider, and admin modules.</p>
+          <a href="blog.html">View details →</a>
         </article>
 
-        <article class="post-card">
-          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60');"></div>
-          <div class="post-content">
-            <h3>Building Responsive Websites</h3>
-            <p class="post-date">June 1, 2026</p>
-            <p>Techniques and patterns to make interfaces resilient across devices and contexts.</p>
-            <a href="blog.html#post2" class="read-more">Read More →</a>
-          </div>
+        <article class="card">
+          <div class="card-icon">📊</div>
+          <h3>Power BI Dashboard</h3>
+          <p>Interactive dashboards for data storytelling, filtering, and business insights.</p>
+          <a href="blog.html">View details →</a>
         </article>
 
-        <article class="post-card">
-          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=60');"></div>
-          <div class="post-content">
-            <h3>JavaScript Tips and Tricks</h3>
-            <p class="post-date">May 28, 2026</p>
-            <p>Practical advice to write clearer, more maintainable JavaScript.</p>
-            <a href="blog.html#post3" class="read-more">Read More →</a>
-          </div>
+        <article class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Course Recommendation System</h3>
+          <p>A recommendation project using TF-IDF, cosine similarity, and student profile data.</p>
+          <a href="blog.html">View details →</a>
         </article>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="tag">Why this portfolio?</p>
+        <h2>Not just a basic student page.</h2>
+      </div>
+      <p>
+        This site is built to show personality and technical direction. It focuses on projects,
+        practical skills, and a visual style that feels more memorable than a plain resume page.
+      </p>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 LemonMan9103. All rights reserved.</p>
-      <div class="social-links">
-        <!-- Replace these with your profiles -->
-        <a href="#" title="GitHub">GitHub</a>
-        <a href="#" title="LinkedIn">LinkedIn</a>
-        <a href="#" title="Twitter">Twitter</a>
-      </div>
-    </div>
+    <p>© 2026 LemonMan9103. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
-  <!-- Prism JS for syntax highlighting -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <script src="assets/js/theme.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

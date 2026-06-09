@@ -1,78 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Blog - LemonMan9103</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
-</head>
-<body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">LemonMan9103</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div style="display:flex;gap:8px;align-items:center">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
-        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      </div>
-    </div>
-  </nav>
 
-  <header class="page-header" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.6), rgba(2,6,15,0.35)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=60'); background-size:cover;">
-    <div class="container">
-      <h1>Articles</h1>
-      <p style="color:var(--muted)">In-depth posts about engineering, performance, and developer tools.</p>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | LemonMan9103</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">Lemon<span>Man</span></a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <section class="blog-section">
-    <div class="container">
-      <div class="posts-grid">
-        <article class="post-card">
-          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1526378722744-6f2f7e6c1c38?auto=format&fit=crop&w=1200&q=60')"></div>
-          <div class="post-content">
-            <h3 id="post1">Getting Started with Web Development</h3>
-            <p class="post-date">June 5, 2026</p>
-            <p style="color:var(--muted)">An approachable guide to modern web fundamentals and best next steps.</p>
-            <a class="read-more" href="posts/getting-started.html">Read →</a>
-          </div>
-        </article>
+  <main>
+    <section class="page-hero">
+      <p class="tag">My Work</p>
+      <h1>Projects, experiments, and builds.</h1>
+      <p>
+        A collection of systems and academic projects I’m working on or have completed.
+      </p>
+    </section>
 
-        <article class="post-card">
-          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=60')"></div>
-          <div class="post-content">
-            <h3 id="post2">Building Responsive Websites</h3>
-            <p class="post-date">June 1, 2026</p>
-            <p style="color:var(--muted)">Patterns and strategies for robust responsive design.</p>
-            <a class="read-more" href="posts/responsive-design.html">Read →</a>
-          </div>
-        </article>
+    <section class="project-grid">
+      <article class="project-card">
+        <div class="project-top">
+          <span>Web System</span>
+          <strong>01</strong>
+        </div>
+        <h2>Doorbi Laundry System</h2>
+        <p>
+          A laundry pickup and delivery system with customer, provider, and admin roles.
+          Built with CodeIgniter 4, PHP, MySQL, and Bootstrap.
+        </p>
+        <div class="tech-list">
+          <span>PHP</span>
+          <span>CodeIgniter</span>
+          <span>MySQL</span>
+          <span>Bootstrap</span>
+        </div>
+      </article>
 
-        <article class="post-card">
-          <div class="post-image" style="background-image:url('https://images.unsplash.com/photo-1508873699372-7ae2f27a8d93?auto=format&fit=crop&w=1200&q=60')"></div>
-          <div class="post-content">
-            <h3 id="post3">JavaScript Tips and Tricks</h3>
-            <p class="post-date">May 28, 2026</p>
-            <p style="color:var(--muted)">Practical patterns to make your JavaScript code more maintainable.</p>
-            <a class="read-more" href="posts/js-tips.html">Read →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+      <article class="project-card">
+        <div class="project-top">
+          <span>Data Dashboard</span>
+          <strong>02</strong>
+        </div>
+        <h2>Power BI Dashboard</h2>
+        <p>
+          Interactive dashboard for visualizing data, showing trends, filtering results,
+          and presenting insights clearly.
+        </p>
+        <div class="tech-list">
+          <span>Power BI</span>
+          <span>Excel</span>
+          <span>Data Viz</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span>Algorithm Project</span>
+          <strong>03</strong>
+        </div>
+        <h2>University Course Recommendation System</h2>
+        <p>
+          A recommendation system using TF-IDF and cosine similarity with student data,
+          course features, interests, and prerequisites.
+        </p>
+        <div class="tech-list">
+          <span>Java</span>
+          <span>NetBeans</span>
+          <span>TF-IDF</span>
+          <span>Cosine Similarity</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span>Security</span>
+          <strong>04</strong>
+        </div>
+        <h2>Security Management Report</h2>
+        <p>
+          Academic work involving security policies, firewall guidelines, access control,
+          and organization-level security planning.
+        </p>
+        <div class="tech-list">
+          <span>Security</span>
+          <span>Policy</span>
+          <span>Documentation</span>
+        </div>
+      </article>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container"><p>&copy; 2026 LemonMan9103</p></div>
+    <p>© 2026 LemonMan9103. Projects will keep evolving.</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <script src="assets/js/theme.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

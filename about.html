@@ -1,143 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About - LemonMan9103</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | LemonMan9103</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- Prism for syntax highlighting (optional) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
 </head>
+
 <body>
-  <!--
-    EDIT NOTES:
-    - Replace PROFILE_IMAGE_URL with your own image when ready.
-    - Update the short bio & skills in the aside card.
-  -->
+  <div class="noise"></div>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
 
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">LemonMan9103</div>
+  <header class="navbar">
+    <a href="index.html" class="logo">Lemon<span>Man</span></a>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <button class="menu-btn" id="menuBtn">☰</button>
 
-      <div style="display:flex;gap:8px;align-items:center">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
-        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-      </div>
-    </div>
-  </nav>
-
-  <header class="page-header" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.6), rgba(2,6,15,0.35)), url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=60')">
-    <div class="container">
-      <h1>About Me</h1>
-      <p>Full-Stack Software Engineer | Building Scalable Systems &amp; Exceptional User Experiences</p>
-    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="blog.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <section class="about-section">
-    <div class="container" style="display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start;">
-      <main class="about-content">
+  <main>
+    <section class="page-hero">
+      <p class="tag">About Me</p>
+      <h1>Student developer with builder energy.</h1>
+      <p>
+        I’m a Computer Science student learning full-stack development, databases,
+        dashboards, software testing, and practical system building.
+      </p>
+    </section>
+
+    <section class="about-layout">
+      <div class="about-main card big-card">
         <h2>Who I Am</h2>
-        <p style="color:var(--muted)">
-          I'm a full-stack software engineer with expertise in building reliable, scalable systems and intuitive user interfaces. I'm passionate about clean code, architecture that scales, and creating developer experiences that make sense. With experience across the entire stack—from frontend frameworks to cloud infrastructure—I focus on delivering solutions that are both technically sound and user-centric.
+        <p>
+          I enjoy building systems that solve real problems. My current focus is web development,
+          database-driven applications, dashboards, and university software projects.
+        </p>
+        <p>
+          I’m still growing, but I like learning by building. I work best when I can connect
+          code, design, database logic, and actual user needs into one complete system.
         </p>
 
-        <h3>Professional Experience</h3>
-        <p style="color:var(--muted)">
-          Throughout my career, I've worked on diverse projects ranging from consumer-facing web applications to backend microservices. I specialize in:
-        </p>
-        <ul style="color:var(--muted);">
-          <li><strong>Frontend Development:</strong> Building responsive, accessible interfaces using React, modern CSS, and JavaScript</li>
-          <li><strong>Backend Systems:</strong> Designing and implementing scalable APIs with Node.js, Express, and modern databases</li>
-          <li><strong>DevOps &amp; Infrastructure:</strong> Docker containerization, CI/CD pipelines, and cloud deployment strategies</li>
-          <li><strong>System Design:</strong> Creating robust architectures for high-traffic applications with attention to performance and reliability</li>
-        </ul>
+        <h2>What I’m Focused On</h2>
+        <div class="timeline">
+          <div>
+            <span></span>
+            <h3>Web Systems</h3>
+            <p>HTML, CSS, JavaScript, PHP, CodeIgniter, and MySQL-based projects.</p>
+          </div>
+          <div>
+            <span></span>
+            <h3>Data & Dashboards</h3>
+            <p>Power BI dashboards, Excel analysis, reporting, and basic data storytelling.</p>
+          </div>
+          <div>
+            <span></span>
+            <h3>Software Projects</h3>
+            <p>Recommendation systems, security management reports, and practical university projects.</p>
+          </div>
+        </div>
+      </div>
 
-        <h3>Skills &amp; Technologies</h3>
-        <div class="skill-category">
-          <h4>Languages</h4>
-          <ul>
-            <li>JavaScript (ES6+)</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>SQL &amp; NoSQL</li>
-          </ul>
-        </div>
-        <div class="skill-category" style="margin-top:16px">
-          <h4>Frontend</h4>
-          <ul>
-            <li>React &amp; React Hooks</li>
-            <li>CSS3, Responsive Design</li>
-            <li>HTML5 Semantics</li>
-            <li>Web Performance Optimization</li>
-          </ul>
-        </div>
-        <div class="skill-category" style="margin-top:16px">
-          <h4>Backend &amp; DevOps</h4>
-          <ul>
-            <li>Node.js &amp; Express</li>
-            <li>RESTful API Design</li>
-            <li>Docker &amp; Containerization</li>
-            <li>Git &amp; Version Control</li>
-            <li>CI/CD Pipelines</li>
-          </ul>
+      <aside class="profile-card">
+        <div class="avatar">LM</div>
+        <h2>LemonMan9103</h2>
+        <p>Computer Science Student</p>
+
+        <div class="skill-cloud">
+          <span>Java</span>
+          <span>PHP</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>MySQL</span>
+          <span>Power BI</span>
+          <span>GitHub</span>
+          <span>CodeIgniter</span>
         </div>
 
-        <h3>What Drives Me</h3>
-        <p style="color:var(--muted)">
-          I'm motivated by problems that require creative solutions and careful engineering. I believe great software isn't just about the code—it's about understanding user needs, building systems that are maintainable, and creating teams that collaborate effectively. I'm committed to continuous learning and enjoy mentoring others in the engineering community.
-        </p>
-
-        <h3>Beyond Code</h3>
-        <p style="color:var(--muted);">
-          When I'm not coding, you'll find me exploring game development, contributing to open-source projects, writing technical articles, or diving into distributed systems research. I'm also passionate about developer experience and love discussing architecture patterns over coffee.
-        </p>
-      </main>
-
-      <aside class="card" style="min-width:260px;position:sticky;top:80px">
-        <img src="assets/image/photo_2026-06-09_23-04-47.jpg" alt="Profile placeholder" style="width:100%;border-radius:8px;margin-bottom:12px;"/>
-        <h3 style="margin-bottom:6px;margin-top:0">LemonMan9103</h3>
-        <p style="color:var(--muted);margin-bottom:12px;margin-top:0"><strong>Full-Stack Engineer</strong><br/>Systems &amp; Frontend Specialist</p>
-        
-        <div style="margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border)">
-          <strong style="color:var(--text);display:block;margin-bottom:8px">Core Skills</strong>
-          <ul style="color:var(--muted);margin:8px 0;padding-left:20px">
-            <li>React &amp; Modern JavaScript</li>
-            <li>Node.js &amp; Express</li>
-            <li>Database Design</li>
-            <li>Docker &amp; DevOps</li>
-            <li>System Architecture</li>
-            <li>API Design</li>
-          </ul>
-        </div>
-
-        <div style="display:flex;gap:8px;flex-direction:column">
-          <a class="btn" href="#" style="background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:10px;text-decoration:none;text-align:center;font-weight:600">View GitHub</a>
-          <a class="btn" href="contact.html" style="background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#021423;border-radius:8px;padding:10px;text-decoration:none;text-align:center;font-weight:600">Get In Touch</a>
-        </div>
+        <a href="contact.html" class="btn primary full">Contact Me</a>
       </aside>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 LemonMan9103. All rights reserved.</p>
-      <div class="social-links">
-        <a href="#" title="GitHub" style="color:var(--muted);text-decoration:none;margin:0 12px">GitHub</a>
-        <a href="#" title="LinkedIn" style="color:var(--muted);text-decoration:none;margin:0 12px">LinkedIn</a>
-        <a href="#" title="Twitter" style="color:var(--muted);text-decoration:none;margin:0 12px">Twitter</a>
-      </div>
-    </div>
+    <p>© 2026 LemonMan9103. Keep building.</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <script src="assets/js/theme.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
