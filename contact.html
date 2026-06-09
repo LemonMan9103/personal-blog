@@ -23,40 +23,62 @@
     </div>
   </nav>
 
-  <header class="page-header" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.6), rgba(2,6,15,0.35)), url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=60'); background-size:cover;">
+  <header class="page-header" style="background-image:linear-gradient(180deg, rgba(2,6,15,0.6), rgba(2,6,15,0.35)), url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1200&q=60')">
     <div class="container">
       <h1>Contact</h1>
-      <p style="color:var(--muted)">Let's build something interesting.</p>
+      <p>Let's build something interesting together.</p>
     </div>
   </header>
 
   <section class="contact-section">
     <div class="container" style="max-width:900px;margin:0 auto;">
       <div class="contact-form-wrapper">
-        <form class="contact-form" action="#" method="POST">
+        <h2 style="color:var(--text);margin-top:0;margin-bottom:12px">Get In Touch</h2>
+        <p style="color:var(--muted);margin-bottom:24px">
+          Have a project idea, question, or just want to chat about tech, games, or anime? I'd love to hear from you! Fill out the form below and I'll get back to you as soon as possible.
+        </p>
+
+        <form class="contact-form" method="POST">
           <div class="form-group">
-            <label for="name">Your name</label>
+            <label for="name">Your Name</label>
             <input id="name" name="name" type="text" placeholder="Jane Developer" required />
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email Address</label>
             <input id="email" name="email" type="email" placeholder="jane@example.com" required />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or idea..." required></textarea>
           </div>
-          <div style="display:flex;gap:12px;align-items:center">
-            <button class="btn btn-primary" type="submit">Send Message</button>
-            <p style="color:var(--muted);margin:0">You can also reach me on GitHub or LinkedIn.</p>
+          <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+            <button class="btn btn-primary" type="submit" style="padding:12px 24px">Send Message</button>
+            <p style="color:var(--muted);margin:0;font-size:0.9rem">Or reach out on <a href="#" style="color:var(--accent);text-decoration:none">GitHub</a> / <a href="#" style="color:var(--accent);text-decoration:none">LinkedIn</a></p>
           </div>
         </form>
+
+        <div style="margin-top:32px;padding-top:32px;border-top:1px solid var(--border)">
+          <h3 style="color:var(--text)">Other Ways to Connect</h3>
+          <p style="color:var(--muted)">
+            <strong>Email:</strong> <a href="mailto:hzqimad03@gmail.com" style="color:var(--accent);text-decoration:none">hzqimad03@gmail.com</a>
+          </p>
+          <p style="color:var(--muted)">
+            <strong>Response Time:</strong> I typically respond within 24-48 hours.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container"><p>&copy; 2026 LemonMan9103</p></div>
+    <div class="container">
+      <p>&copy; 2026 LemonMan9103</p>
+      <div class="social-links">
+        <a href="#" title="GitHub" style="color:var(--muted);text-decoration:none;margin:0 12px">GitHub</a>
+        <a href="#" title="LinkedIn" style="color:var(--muted);text-decoration:none;margin:0 12px">LinkedIn</a>
+        <a href="#" title="Twitter" style="color:var(--muted);text-decoration:none;margin:0 12px">Twitter</a>
+      </div>
+    </div>
   </footer>
 
   <script src="assets/js/theme.js"></script>
