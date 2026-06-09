@@ -367,70 +367,7 @@ pre {
   font-size: 0.95rem;
 }
 
-.bat-wrap {
-  position: absolute;
-  right: 8%;
-  bottom: 8%;
-  width: 130px;
-  height: 90px;
-  animation: batFly 2.4s ease-in-out infinite alternate;
-}
 
-@keyframes batFly {
-  from {
-    transform: translateY(0) rotate(-8deg);
-  }
-
-  to {
-    transform: translateY(-24px) rotate(8deg);
-  }
-}
-
-.bat {
-  position: relative;
-  width: 46px;
-  height: 28px;
-  margin: 30px auto;
-  background: #101010;
-  border-radius: 50% 50% 45% 45%;
-  box-shadow: 0 0 0 3px #52536b, 0 0 35px rgba(250, 204, 21, 0.3);
-}
-
-.bat::before,
-.bat::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  width: 58px;
-  height: 42px;
-  background: #101010;
-  border: 3px solid #52536b;
-  animation: flap 0.42s steps(2) infinite;
-}
-
-.bat::before {
-  right: 34px;
-  clip-path: polygon(100% 35%, 72% 0, 46% 45%, 16% 0, 0 80%, 42% 58%, 62% 100%);
-  border-radius: 16px 0 0 20px;
-  transform-origin: right center;
-}
-
-.bat::after {
-  left: 34px;
-  clip-path: polygon(0 35%, 28% 0, 54% 45%, 84% 0, 100% 80%, 58% 58%, 38% 100%);
-  border-radius: 0 16px 20px 0;
-  transform-origin: left center;
-}
-
-@keyframes flap {
-  0% {
-    transform: rotate(0deg) scaleY(1);
-  }
-
-  100% {
-    transform: rotate(6deg) scaleY(0.78);
-  }
-}
 
 .floating-badge {
   position: absolute;
@@ -830,8 +767,5 @@ textarea:focus {
     transform: none;
   }
 
-  .bat-wrap {
-    right: 0;
-    bottom: 0;
-  }
+
 }
