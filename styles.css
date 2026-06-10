@@ -717,7 +717,6 @@ textarea:focus {
     top: auto;
   }
 }
-
 @media (max-width: 720px) {
   .navbar {
     border-radius: 24px;
@@ -766,8 +765,9 @@ textarea:focus {
   .terminal-card {
     transform: none;
   }
+}
 
- .bat-wrap {
+.bat-wrap {
   position: absolute;
   right: 5%;
   bottom: 6%;
@@ -788,23 +788,31 @@ textarea:focus {
   }
 }
 
-@media (max-width: 720px) {
-  .bat-wrap {
-    right: -10px;
-    bottom: -10px;
-    transform: scale(0.75);
-  }
+.profile-card {
+  overflow: visible;
+}
+
+.profile-img-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 .profile-img {
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 18px;
+  width: 190px;
+  height: auto;
+  max-width: 100%;
   display: block;
-  object-fit: cover;
-  border-radius: 32px;
+  object-fit: contain;
+  border-radius: 28px;
   border: 2px solid rgba(250, 204, 21, 0.55);
   box-shadow: 0 22px 60px rgba(250, 204, 21, 0.22);
+  transform: none;
+  position: relative;
+  left: auto;
+  right: auto;
 }
 
 .availability-pill {
@@ -936,9 +944,14 @@ textarea:focus {
 }
 
 @media (max-width: 720px) {
+  .bat-wrap {
+    right: -10px;
+    bottom: -10px;
+    transform: scale(0.75);
+  }
+
   .info-grid,
   .hobby-list {
     grid-template-columns: 1fr;
   }
-}
 }
