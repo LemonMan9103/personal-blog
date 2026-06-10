@@ -767,5 +767,32 @@ textarea:focus {
     transform: none;
   }
 
+ .bat-wrap {
+  position: absolute;
+  right: 5%;
+  bottom: 6%;
+  width: 180px;
+  height: 160px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 24px rgba(250, 204, 21, 0.28));
+  animation: batDrift 3s ease-in-out infinite alternate;
+}
 
+@keyframes batDrift {
+  from {
+    transform: translateY(0) rotate(-4deg);
+  }
+
+  to {
+    transform: translateY(-18px) rotate(5deg);
+  }
+}
+
+@media (max-width: 720px) {
+  .bat-wrap {
+    right: -10px;
+    bottom: -10px;
+    transform: scale(0.75);
+  }
+}
 }
